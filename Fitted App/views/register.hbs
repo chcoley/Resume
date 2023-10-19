@@ -1,0 +1,37 @@
+<body>
+    <img class="ui centered medium image" src="/img/image.png">
+    <div class="ui hidden divider"></div>
+    <div class="ui middle aligned center aligned three column grid">
+        <div class="column">
+            <h2 class="ui image header">
+                <div class="content">
+                    Register
+                </div>
+            </h2>
+            <form class="ui large form" action="/users/register" method="post">
+                <div class="ui segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="email" placeholder="your email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="name" placeholder="your name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input type="password" name="password" placeholder="password">
+                        </div>
+                    </div>
+                    <button class="ui fluid large black button" type="submit">Register</button>
+                </div>
+
+                <div class="ui error message"></div>
+        </div>
+        </form>
+</body>
