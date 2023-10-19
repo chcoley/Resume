@@ -1,0 +1,29 @@
+{
+  "name": "fitted",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "watch": "nodemon -w bin/www -w . start",
+    "dev": "DEBUG=fitted:* nodemon -w bin/www -w . start",
+    "dev-express": "DEBUG=express:* nodemon -w bin/www -w . start",
+    "attached": "node --inspect-brk ./bin/www",
+    "win": "set DEBUG=fitted:* && npm start"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.16.2",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.4",
+    "morgan": "~1.9.1",
+    "tracking": "git+https://github.com/eduardolundgren/tracking.js.git"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
