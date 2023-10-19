@@ -1,0 +1,72 @@
+
+<script src="public/js/script.js"></script>
+<div id="sidebar" class="ui left demo vertical inverted visible  sidebar labeled icon menu">
+  <a class="item">
+    <img id="home_logo" class="center" src="img/image.png" height: "20px" width:"20px">
+  </a>
+  <a href="/home" class="item">
+    <i class="home icon"></i>
+    Home
+  </a>
+  <a href="/mycloset" class="item">
+    <i class="block layout icon"></i>
+    My Closet
+  </a>
+  <a href="/fits" class="item">
+    <i class="theme icon"></i>
+    Fits
+  </a>
+  <a href="/celebfits" class="item">
+    <i class="diamond icon" class="fits"></i>
+    Celeb Fits
+  </a>
+  <a href="/logout" class="item">
+    <i class="sign out alternate icon" ></i>
+    Logout
+  </a>
+</div>
+
+<video autoplay></video>
+
+<script>  function hasGetUserMedia() {
+  return !!(navigator.mediaDevices &&
+    navigator.mediaDevices.getUserMedia);
+}
+
+if (hasGetUserMedia()) {
+  // Good to go!
+  const constraints = {
+  video: true
+};
+
+const video = document.querySelector('video');
+
+navigator.mediaDevices.getUserMedia(constraints).
+  then((stream) => {video.srcObject = stream});
+} else {
+  alert('getUserMedia() is not supported by your browser');
+}
+</script>
+
+
+ <div class="display">
+      <video id="webcam" width="640" height="480" autoplay></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+
+    <div class="ui">
+
+      <div class="controls">
+
+        <p>Click on the webcam feed to pick a color, then adjust tolerance.</p>
+
+        <div>
+          <label for="tolerance">Tolerance:</label>
+          <input id="tolerance" type="range" value="10" max="255" min="0" step="1">
+        </div>
+
+      </div>
+
+      <div id="color"></div>
+
+    </div>
