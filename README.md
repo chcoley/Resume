@@ -5,7 +5,7 @@
 * [Setup](#setup)
 
 ## General info
-Welcome to Chase's Resume Github Repository, we are overjoyed to have you here with us and hope it gives you more insight on some of the work I've done. This repository will consist of a number of algorithms coded in Python, work done in Jupyter Lab for my research project mentioned in my resume, as well as the code from an app Fitted which was made during my time at Adjacent Academies. Should it leave you with any questions, don't hesisate to ask, I'd be eager to oblige. 
+Welcome to Chase's Resume Github Repository, we are overjoyed to have you here with us and hope it gives you more insight on some of the work I've done. This repository will consist of a number of algorithms coded in Python, work done in Jupyter Lab for my research project mentioned in my resume, as well as the code from an app Fitted which was started during my time at Adjacent Academies. Should it leave you with any questions, don't hesisate to ask, I'd be eager to oblige. 
 	
 ## Technologies
 Project is created with:
